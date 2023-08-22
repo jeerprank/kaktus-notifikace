@@ -80,16 +80,6 @@ def check_new_posts():
         post_title = latest_post.find("h3").get_text(strip=True)
         post_content = latest_post.find("p").get_text(strip=True)
 
-        date_time_text = post_content.split("od")[1].strip()
-        date_range, time_range = date_time_text.split("do")
-        date_range = date_range.replace(".", "").strip()
-
-        date_parts = date_range.split()
-        day = date_parts[0]
-        month_number = date_parts[-1]
-        month_name = month_names.get(month_number, "Unknown Month")
-
-        time_range = time_range.replace("hodin", "").replace("až", "-").strip()
         formatted_date = datetime.now().strftime("%d.%m")
 
         subject = f"Kaktus - {formatted_date}"
