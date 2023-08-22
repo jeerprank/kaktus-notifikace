@@ -12,7 +12,7 @@ receiver_email = "hosekvitek@gmail.com"
 smtp_server = "smtp.seznam.cz"
 smtp_port = 465
 smtp_username = "kaktusnotifikace@seznam.cz"
-smtp_password = "kaktusmail"
+smtp_password = ""
 
 # URL of the newsletter page
 url = "https://www.mujkaktus.cz/novinky"
