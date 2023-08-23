@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kaktus Checker</title>
+</head>
+<body>
+    <h1>Kaktus Checker</h1>
+    <p>Server status: {{ "Running" if server_status else "Down" }}</p>
+    <p>Last email sent:</p>
+    <ul>
+        <li>Subject: {{ last_email[1] }}</li>
+        <li>Body: {{ last_email[2] }}</li>
+        <li>Timestamp: {{ last_email[3] }}</li>
+    </ul>
+</body>
+</html>
